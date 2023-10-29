@@ -1,0 +1,37 @@
+.app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(/imgWeather.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.search{
+  display: flex;
+  flex-direction: column;
+}
+
+.search__form{
+  margin-bottom: 10px;
+}
+
+
+.search__input{
+  width: 200px;
+  height: 25px;
+  border: none;
+  border-radius: 0.8em;
+  text-align: center;
+}
+
+.bx-search-alt{
+  color: white;
+  font-size: 0.9em;
+  cursor: pointer;
+  padding: 2px;
+
+}
+

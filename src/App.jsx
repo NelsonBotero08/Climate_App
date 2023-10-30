@@ -11,7 +11,7 @@ function App() {
   const [coords, setCoords] = useState();
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
-  const [inputValue, setInputValue] = useState(coords);
+  const [inputValue, setInputValue] = useState();
 
   const success = (position) => {
     const obj = {

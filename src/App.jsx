@@ -80,7 +80,19 @@ function App() {
       {isLoading ? (
         <LoadingCard />
       ) : hasError ? (
-        <ErrorSuccess />
+        <div className="search">
+          <form className="search__form" onSubmit={handleSubmit}>
+            <input className="search__input" type="text" ref={inputCountry} />
+            <div className="search__div--img">
+              <i
+                className="search__img"
+                class="bx bx-search-alt"
+                onClick={handleSubmit}
+              ></i>
+            </div>
+          </form>
+          <ErrorSuccess />
+        </div>
       ) : (
         <div className="search">
           <form className="search__form" onSubmit={handleSubmit}>
